@@ -1,0 +1,866 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+body {
+  background-color:whitesmoke;
+}
+html{
+
+  scroll-behavior: smooth;
+}
+.mainNav {
+  padding: 10px;
+  z-index: 1;
+  width: 100%;
+  background-color: #ffffff;
+  accent-color: #FF6347;
+}
+
+
+.mainNav nav .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mainNav nav .nav .logo img {
+  width: 60px;
+  height: 30px;
+  border: 2px solid rgb(79, 132, 248);
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.mainNav nav .nav .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+}
+
+.mainNav nav .nav .menu ul a {
+  text-decoration: none;
+}
+
+.mainNav nav .nav .menu ul a li {
+  list-style: none;
+  padding: 5px;
+  margin: 0 25px;
+  color: #333333;
+  text-transform: capitalize;
+  display: flex;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.mainNav nav .nav .menu ul a li:hover {
+  background-color: #FF6347;
+}
+
+.mainNav nav .nav .menu ul a li::first-letter {
+  font-size: 19px;
+}
+
+.mainNav nav .nav .services button {
+  margin-left: 25px;
+  outline: none;
+  background-color: rgb(11, 170, 170);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: aqua;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-family: "Lumanosimo", cursive;
+}
+
+.mainNav nav .nav .services button:hover {
+  box-shadow: 2px 2px 5px aqua;
+}
+
+
+.serviceList {
+  display: none;
+  position: absolute;
+  z-index: 2;
+}
+
+.serviceList ul {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.993);
+  padding: 10px;
+  margin: 3px 10px;
+  width: max-content;
+  height: max-content;
+  border-radius: 10px;
+  font-family: "Tektur", cursive;
+  margin-right: 20%;
+}
+
+.serviceList ul li {
+  padding: 5px 15px;
+  list-style: none;
+  margin: 8px;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgb(23, 163, 184);
+  border-radius: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceList ul li:hover {
+  background-color: rgba(13, 157, 167, 0.651);
+}
+
+#services:focus + .serviceList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quickSignUp {
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.quickSignUp nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.quickSignUp nav .signup,
+.login {
+  display: flex;
+  align-items: center;
+  margin: 7px;
+}
+.quickSignUp nav form {
+  display: flex;
+}
+.quickSignUp nav .signup,
+.login p {
+  color: #053f71;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 5px;
+  margin: 5px;
+}
+.quickSignUp input {
+  padding: 9px 150px;
+  border: 2px solid rgb(49, 139, 218);
+  outline: none;
+}
+.quickSignUp input:hover {
+  border: 3px solid rgb(23, 104, 175);
+}
+.quickSignUp input:focus {
+  border: 3px solid rgb(0, 39, 74);
+}
+.quickSignUp input:valid {
+  border: 3px solid rgb(12, 249, 0);
+}
+.quickSignUp button {
+  background-color: #0d4a4f;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-family: cursive;
+  text-transform: capitalize;
+}
+section {
+  overflow: hidden;
+}
+
+.firstPageContent {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: #F5DEB3 ;
+  accent-color: #FFD700 ;
+}
+
+.firstPageContent .box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.firstPageContent .box1 .box1Header h2 {
+  font-family: "Pacifico", cursive;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: rgb(10, 153, 163);
+  font-size: 50px;
+}
+
+.firstPageContent .box1 .box1Header h2::first-letter {
+  font-size: 80px;
+  letter-spacing: 5px;
+  color: aqua;
+}
+
+.firstPageContent .box1 .box1Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.firstPageContent .box1 .box1Content p {
+  font-family: cursive;
+  line-height: normal !important;
+  font-size: 15px;
+  font-weight: 200;
+  color: #4B0082;
+}
+
+.firstPageContent .box1 .box1Content span {
+  font-size: 40px;
+  color: aqua;
+  text-transform: capitalize;
+  font-family: "Pacifico", cursive;
+}
+
+.firstPageContent .box1 .box1Content .box1Buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstPageContent .box1 .box1Content .box1Buttons button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color:  #FFD700;
+  border-radius: 25px;
+  cursor: pointer;
+  color: aliceblue;
+  text-transform: capitalize;
+  margin: 20px;
+}
+
+.firstPageContent .box1 .box1Content .box1Buttons button:hover {
+  transform: scale(1.02);
+  box-shadow: 3px 4px 36px -19px rgba(0, 0, 0, 0.74);
+  -webkit-box-shadow: 3px 4px 36px -19px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: 3px 4px 36px -19px rgba(0, 0, 0, 0.74);
+}
+
+#book-a-table {
+  background: #ff0000;
+  background: -webkit-linear-gradient(154deg, #ff0000 0%, #830808 100%);
+  background: linear-gradient(154deg, #ff0000 0%, #830808 100%);
+}
+
+.firstPage .firstPageContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2 {
+  margin-top: 40px;
+}
+
+.box2.box2Content {
+  display: flex;
+  flex-direction: row;
+}
+
+.box2img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.set1 {
+  display: flex;
+  margin: 0px 10px;
+  padding: px;
+}
+
+.set2 {
+  display: flex;
+  margin: 0px 10px;
+  padding: px;
+}
+
+.box2img {
+  position: relative;
+}
+
+.caption {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.363);
+    padding: 1px;
+    margin: 2px;
+    color: white;
+    font-weight: 200;
+    font-family: "PT Sans", sans-serif;
+    text-transform: capitalize;
+    transition: 0.7s cubic-bezier(0.43, 0.18, 0.9, -0.17);
+    opacity: 0;
+}
+.caption:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.secondSection {
+  
+  color:  #333333 !important;
+  margin: 10px 0px;
+  padding: 40px;
+  background-color:#FFFAF0  ;
+  accent-color: #FF6F61;
+}
+
+.secondSection .secondSectionContent {
+  gap: 10px;
+}
+
+.secondSection .secondSectionContent .h1 h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Aref Ruqaa Ink", serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.secondSection .secondSectionContent .h1 p {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Aref Ruqaa Ink", serif;
+  color: #1e1c1c ;
+}
+
+.secondSection .secondSectionContent .foodGallery {
+  display: flex;
+}
+.secondSection .secondSectionContent .foodintro {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+}
+.secondSection .secondSectionContent .foodintro h3 {
+  text-transform: capitalize;
+  border-bottom: 1.7px solid #000000;
+  padding: 0px 100px;
+  font-family: cursive;
+  color: #000;
+  width: 100%;
+}
+.foodGallery {
+  overflow-x: scroll;
+  width: 1350px;
+  margin: 5px 0px;
+  padding: 10px 0px;
+}
+
+.Gallery {
+  margin: 3px;
+  background-color: #ffffff;
+  width: 250px;
+  height: 350px;
+  border: 2px solid rgb(25, 222, 215);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  color:  #333333;
+}
+
+.GalleryImg img {
+  width: 250px;
+  height: 200px;
+}
+
+.Gallery:hover {
+  box-shadow: 0 4px 25px -6px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 0 4px 25px -6px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0 4px 25px -6px rgba(0, 0, 0, 0.57);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.GalleryCaption {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Lumanosimo", cursive;
+}
+
+.GallerySubmit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.GallerySubmit button {
+  width: 110px;
+  border: 0;
+  background: #080894;
+  background: -webkit-linear-gradient(76deg, #080894 0, #7b2ea8 100%);
+  background: linear-gradient(76deg, #080894 0, #7b2ea8 100%);
+  padding: 8px;
+  border-radius: 10px;
+  margin: 5px;
+  font-size: 15px;
+  transition: 0.3s ease;
+  color: #fff;
+}
+
+.GallerySubmit button:hover {
+  cursor: pointer;
+  width: 140px;
+  font-size: 17px;
+}
+.GallerySubmit button:focus {
+  cursor: pointer;
+  width: 140px;
+  font-size: 17px;
+}
+.DrinksGallery {
+  overflow-x: scroll;
+  width: 1350px;
+  margin: 5px 0px;
+  padding: 10px 0px;
+}
+.secondSection .secondSectionContent .DrinksGallery {
+  display: flex;
+}
+.DrinksMenu h3 {
+  text-transform: capitalize;
+  border-bottom: 1.7px solid #000000;
+  padding: 0px 100px;
+  font-family: cursive;
+  color: #000;
+}
+.describeOrder h5 {
+  text-transform: capitalize;
+  font-family: cursive;
+  font-size: 20px;
+}
+.describeOrder button {
+  padding: 7px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.reservationSectionContent {
+  color: #fff !important;
+  text-transform: capitalize !important;
+  font-family: cursive !important;
+}
+.reservationSectionContent .h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reservationSectionContent .h1 h1 span::first-letter {
+  font-size: 65px;
+  color: #000;
+  font-family: cursive;
+}
+.reservationSectionContent .h1 h1 {
+  font-size: 40px;
+  border-bottom: 3px solid #00e1ff;
+  text-transform: capitalize;
+  color: #00e1ff;
+  font-family: cursive;
+  text-align: center;
+  width: 100%;
+}
+.reservationSectionContent1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F0FFF0 ;
+  accent-color: #FF1493;
+  margin: 40px;
+  padding: 10px;
+  border-radius: 25px;
+}
+.reservationSectionContent1 .box1 {
+  width: 838.8px;
+  height: 500px;
+}
+.reservationSectionContent1 .box1 article p span {
+  background-color: #000;
+  padding: 5px;
+  margin: 0px;
+  border-radius: 10px;
+}
+.reservationSectionContent1 .box1 h1 {
+  font-size: 60px;
+  color: #2E8B57;
+}
+.reservationSectionContent1 .box1 h1 img {
+  width: 60px;
+}
+.reservationSectionContent1 .box1 h3 {
+  font-size: 30px;
+  color: rgb(255, 234, 0);
+}
+.reservationSectionContent1 .box1 p ,article{
+  font-size: 16px;
+  color: #2E8B57;
+}
+.reservationSectionContent1 .box2 form h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: cursive;
+  pad: 10px;
+  border-bottom: 2px solid black;
+  width: 100%;
+  text-align: center;
+  color: #2E8B57;
+}
+.reservationSectionContent1 .box2 form {
+  width: 500px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #29794c !important;
+  background-color: #dff0e2;
+}
+.reservationSectionContent1 .box2 form label {
+  display: block;
+  margin: 3px 0px;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: cursive;
+}
+.reservationSectionContent1 .box2 form input,
+textarea,
+select {
+  padding: 8px 30px;
+  border-radius: 5px;
+  width: 160px;
+  border: 1px solid #08fffb;
+  margin: 5px;
+}
+.reservationSectionContent1 .box2 form select,
+option {
+  z-index: 1;
+}
+.reservationSectionContent1 .box2 form input:hover {
+  border: 1px solid rgb(11, 164, 225);
+}
+.reservationSectionContent1 .box2 form input[type="submit"] {
+  background-color: #0df609;
+  border: none;
+}
+.reservationSectionContent1 .box2 form input[type="submit"]:hover {
+  background-color: #88e386;
+}
+.ratingsReviews{
+  background-color: #FFFFE0 ;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  border-radius: 10px; 
+  margin: 17px;
+}
+.reviewsFromClients {
+  display: flex;
+}
+.ratingsheading h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 60px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #333333;
+}
+.ratingsheading h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.reviewCard .stars img {
+  width: 100px;
+  margin: 3px;
+}
+.reviewCard .ClientImgName .Clientimg img {
+  width: 200px;
+  height: 130px;
+  border-radius: 20px;
+}
+.reviewCard .ClientImgName .Clientimg {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  flex-direction: column;
+}
+.reviewCard .ClientImgName {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewCard .review {
+  font-family: "REM", sans-serif;
+}
+.reviewCard {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 5px;
+  box-sizing: content-box;
+  font-family: cursive;
+  text-transform: capitalize;
+  box-shadow: 1px 3px 23px -4px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 1px 3px 23px -4px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 1px 3px 23px -4px rgba(0, 0, 0, 0.28);
+}
+.reviewCard .date {
+  opacity: 0.7;
+  display: flex;
+  justify-content: flex-end;
+}
+.yourReview h4 {
+  font-size: 25px;
+  color: #00e1ff;
+  font-family: "Fira Sans", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.yourReview textarea {
+  width: 300px;
+  color: black;
+}
+.yourReview input {
+  background-color: rgb(47, 255, 54);
+  padding: 15px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.yourReview input:hover {
+  background-color: green;
+  cursor: pointer;
+}
+.chooseDiningKings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.chooseDiningKings h1 span {
+  color: blue;
+}
+.chooseDiningKings h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+}
+.reasonsDiningKings {
+  display: flex;
+}
+.reasonsDiningKings .reasons {
+  width: 200px;
+  height: 100px;
+  border: 1px solid whitesmoke;
+  display: flex;
+  -webkit-box-shadow: 0 1.5px 5px 8px #dce4e5;
+  -moz-box-shadow: 0 1.5px 5px 8px #dce4e5;
+  box-shadow: 0 1.5px 5px 8px #dce4e5;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  margin: 30px;
+  border-radius: 10px;
+}
+.reasonsDiningKings .reasons span {
+  color: blue;
+  font-size: 40px;
+}
+.reasonsDiningKings .reasons p {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+.ourChefsContent h1 {
+  text-align: center;
+  font-size: 70px;
+  color: blue;
+  text-transform: capitalize;
+}
+.ourChefsContent .chefs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Merriweather", serif;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #fff;
+}
+.ourChefsContent .chefs .content {
+  background-color: #0000008d;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.chef1 {
+  background: url(img/chefs/chef\ ebuka.jpg);
+  width: 200px;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  margin: 20px;
+  box-shadow: 3px 3px 10px 3px #b4cfe9;
+}
+.chef2 {
+  background: url(img/chefs/chef\ daniel.jpg);
+  width: 200px;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  margin: 20px;
+  box-shadow: 3px 3px 10px 3px #b4cfe9;
+}
+.chef3 {
+  background: url(img/chefs/chef\ lora.jpg);
+  width: 200px;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  margin: 20px;
+  box-shadow: 3px 3px 10px 3px #b4cfe9;
+}
+.chef4 {
+  background: url(img/chefs/chef\ rachel.jpg);
+  width: 200px;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  margin: 20px;
+  box-shadow: 3px 3px 10px 3px #b4cfe9;
+}
+.phoneMenu{
+  display: none;
+}
+
+.footer{
+  padding: 40px 40px;
+  background-color: #084bdbdc;
+}
+.footerSectionContent{
+  display: flex;
+  margin: 40px;
+  justify-content:space-around;
+  align-items: center;
+}
+.footerSectionContent .contentLeft{
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footerSectionContent .media{
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+@media only screen and (max-width:1200px) {
+body{
+  max-width: 100%;
+  overflow: scroll;
+  width: 100vh;
+}
+.mainNav nav .nav .menu ul a li {
+  margin: 0 10px;
+}
+.quickSignUp input {
+  padding: 9px 70px;
+  border: 2px solid rgb(49, 139, 218);
+  outline: none;
+}
+.box2img img {
+  width: 200px;
+  height: 200px;
+}
+
+.firstPageContent .box1 .box1Content{
+  max-width: 500px;
+}
+#firstPage {
+  max-width: 100%;
+  padding: 0px;
+  margin: 0;
+}
+
+}
+
+@media only screen and (max-width:601px){
+  body{
+    overflow: scroll;
+  }
+
+  mainNav nav .nav .menu ul,a,li , .services{
+  display: none;
+
+}
+}
