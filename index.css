@@ -161,6 +161,7 @@ html{
   padding: 9px 150px;
   border: 2px solid rgb(49, 139, 218);
   outline: none;
+  border-radius: 10px;
 }
 .quickSignUp input:hover {
   border: 3px solid rgb(23, 104, 175);
@@ -805,6 +806,9 @@ option {
 .footer{
   padding: 40px 40px;
   background-color: #084bdbdc;
+  color: white !important;
+  font-family: cursive !important;
+  text-transform: capitalize !important;
 }
 .footerSectionContent{
   display: flex;
@@ -812,16 +816,53 @@ option {
   justify-content:space-around;
   align-items: center;
 }
+
+.copyWright span{
+  font-size: 40px;
+}
+textarea{
+  resize: none;
+}
 .footerSectionContent .contentLeft{
   max-width: 600px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-weight: 200;
+  font-family:Arial, Helvetica, sans-serif;
 }
 .footerSectionContent .media{
   display: flex;
   align-items: center;
   margin: 5px;
+}
+
+.contentMidlle h3{
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.contentMidlle .socials{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contentMidlle .socials .media span{
+  margin: 5px;
+  font-size: 20px;
+}
+
+.contentMidlle .socials .media p{
+  text-transform: capitalize;
+  font-family: cursive;
+}
+.contentRight li{
+  list-style: none;
+}
+.contentRight li a{
+  color: white;
+  text-decoration-line: underline;
 }
 
 @media only screen and (max-width:1200px) {
@@ -854,13 +895,62 @@ body{
 
 }
 
+@media only screen and (max-width:801px){
+  .quickSignUp{
+    display: none;
+  }
+  .box2img{
+    width: 200px;
+  }
+  .box1Header h2{
+    font-size: 30px;
+  }
+  mainNav nav .nav .menu ul,a,li , .services{
+    display: none;
+  
+  }
+  .box1Content p{
+    font-size: 11px;
+  }
+  .set2{
+    display: none;
+  }
+  .set1{
+    display: flex;
+    flex-direction: column;
+  }
+  .reviewsFromClients{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  .reservationSectionContent1 .box1 h1{
+    font-size: 25px;
+  }
+  .reservationSectionContent1 .box1 h3{
+    font-size: 15px;
+  }
+  .reservationSectionContent1 .box2 form {
+    width: 300px;
+  }
+  .reviewCard .ClientImgName .Clientimg img {
+    width: 80px;
+  }
+  .reviewCard{
+    width: 300px;
+  }
+  .part1{
+    display: flex;
+  }
+  .footerSectionContent,.contentLeft,.contentMidlle,.spcials{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
 @media only screen and (max-width:601px){
   body{
     overflow: scroll;
   }
 
-  mainNav nav .nav .menu ul,a,li , .services{
-  display: none;
-
-}
 }

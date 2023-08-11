@@ -108,7 +108,7 @@
                                 <li>blog</li>
                             </a>
                     </div>
-                    <span class="phoneMenu" onclick="show()">
+                    <span class="phoneMenu" onclick="show()" style="display:flex;">
                         <i class="fi fi-rr-menu-burger"></i>
                     </span>
                     <div class="services">
@@ -179,8 +179,9 @@
             background-color: yellow;
             display:none;
             top: 0%;
-            position: fixed;
+            position: absolute;
             z-index: 1000;
+            width: max-content;
             transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
             
         }
@@ -839,75 +840,80 @@
                 </div>
                 <div class="reviewsFromClients">
                     <!-- reviews card -->
-                    <div class="reviewCard">
-                        <div class="ClientImgName">
-                            <div class="Clientimg">
-                                <img src="img/clients review/client2.jpg" alt="alex micheal">
-                                <span>amelia johnson</span>
+                    <div class="part1">
+                        <div class="reviewCard">
+                            <div class="ClientImgName">
+                                <div class="Clientimg">
+                                    <img src="img/clients review/client2.jpg" alt="alex micheal">
+                                    <span>amelia johnson</span>
+                                </div>
+                                <div class="stars">
+                                    <img src="img/clients review/4 stars rating.jpg" alt="5stars">
+                                </div>
                             </div>
-                            <div class="stars">
-                                <img src="img/clients review/4 stars rating.jpg" alt="5stars">
+                            <div class="review">
+                                <p>"the food is superb and amazing i also have to commend the staffs for the friendliness"
+                                </p>
+                            </div>
+                            <div class="date">
+                                march 13, 2022 <br>10:25am
                             </div>
                         </div>
-                        <div class="review">
-                            <p>"the food is superb and amazing i also have to commend the staffs for the friendliness"
-                            </p>
-                        </div>
-                        <div class="date">
-                            march 13, 2022 <br>10:25am
-                        </div>
+    
+                        <div class="reviewCard">
+                            <div class="ClientImgName">
+                                <div class="Clientimg">
+                                    <img src="img/clients review/client5.jpg" alt="alex micheal">
+                                    <span>barrack obama</span>
+                                </div>
+                                <div class="stars">
+                                    <img src="img/clients review/4 stars rating.jpg" alt="4stars">
+                                </div>
+                            </div>
+                            <div class="review">
+                                <p>"the steak was absolutely amazing cant wait to try another one again."</p>
+                            </div>
+                            <div class="date">
+                                may 20, 2023 <br>8:26pm
+                            </div>
                     </div>
+                    </div>
+                    <div class="part1">
 
-                    <div class="reviewCard">
-                        <div class="ClientImgName">
-                            <div class="Clientimg">
-                                <img src="img/clients review/client5.jpg" alt="alex micheal">
-                                <span>barrack obama</span>
+                        <div class="reviewCard">
+                            <div class="ClientImgName">
+                                <div class="Clientimg">
+                                    <img src="img/clients review/client6.jpg" alt="alex micheal">
+                                    <span>alex micheal</span>
+                                </div>
+                                <div class="stars">
+                                    <img src="img/clients review/3 stars rating.jpg" alt="3stars">
+                                </div>
                             </div>
-                            <div class="stars">
-                                <img src="img/clients review/4 stars rating.jpg" alt="4stars">
+                            <div class="review">
+                                <p>"not a bad experiencebut there is still room for improvement."</p>
                             </div>
-                        </div>
-                        <div class="review">
-                            <p>"the steak was absolutely amazing cant wait to try another one again."</p>
-                        </div>
-                        <div class="date">
-                            may 20, 2023 <br>8:26pm
-                        </div>
-                    </div>
-                    <div class="reviewCard">
-                        <div class="ClientImgName">
-                            <div class="Clientimg">
-                                <img src="img/clients review/client6.jpg" alt="alex micheal">
-                                <span>alex micheal</span>
-                            </div>
-                            <div class="stars">
-                                <img src="img/clients review/3 stars rating.jpg" alt="3stars">
+                            <div class="date">
+                                june 26, 2023 <br>3:04pm
                             </div>
                         </div>
-                        <div class="review">
-                            <p>"not a bad experiencebut there is still room for improvement."</p>
-                        </div>
-                        <div class="date">
-                            june 26, 2023 <br>3:04pm
-                        </div>
-                    </div>
-
-                    <div class="reviewCard">
-                        <div class="ClientImgName">
-                            <div class="Clientimg">
-                                <img src="img/clients review/client11.jpg" alt="alex micheal">
-                                <span>riyad preesh</span>
+    
+                        <div class="reviewCard">
+                            <div class="ClientImgName">
+                                <div class="Clientimg">
+                                    <img src="img/clients review/client11.jpg" alt="alex micheal">
+                                    <span>riyad preesh</span>
+                                </div>
+                                <div class="stars">
+                                    <img src="img/clients review/5 stars rating.jpg" alt="5stars">
+                                </div>
                             </div>
-                            <div class="stars">
-                                <img src="img/clients review/5 stars rating.jpg" alt="5stars">
+                            <div class="review">
+                                <p>"The staff was very friendly, helpful, knowledgeable about the restaurant's menu."</p>
                             </div>
-                        </div>
-                        <div class="review">
-                            <p>"The staff was very friendly, helpful, knowledgeable about the restaurant's menu."</p>
-                        </div>
-                        <div class="date">
-                            January 20, 2022 <br>11:26pm
+                            <div class="date">
+                                January 20, 2022 <br>11:26pm
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -996,9 +1002,6 @@
                     <p class="para">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error hic quasi expedita! Sapiente debitis asperiores numquam rem minima blanditiis fugit repellat alias vel.
                     </p>
-                    <div class="copyWright">
-                        <span> copywright &copy; 2023</span>
-                    </div>
                 </div>
                 <div class="contentMidlle">
                     <h3>
@@ -1052,15 +1055,18 @@
                 </div>
             </div>
         </div>
+        <div class="copyWright" style="display: block; text-transform: capitalize; text-align: center; background-color: aqua;">
+            <span> copywright &copy; 2023</span>
+        </div>
     </section>
     <script>
-        const content = document.getElementById("content")
+        const content = document.getElementById("menu")
         function show() {
-            content.style.display = "flex"
+            menu.style.display = "flex"
 
         }
         function hide(){
-            content.style.display = "none"
+            menu.style.display = "none"
         }
 
     </script>
