@@ -1,20 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Responsive Menu</title>
 </head>
 <body>
-  html
-<input type="text" class="bottom-line-input" placeholder="Type your message...">
+  <div class="menu-toggle">
+    <div class="burger"></div>
+  </div>
+  <nav class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Reservations</a></li>
+      <li><a href="#">Reviews</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
   <style>
-   css
-.bottom-line-input {
-  border: none;
-  outline: none;
-  padding: 5px 0;
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.burger {
+  width: 25px;
+  height: 10px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -70%;
+  width: 70%;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s ease-in-out;
+}
+
+.menu.bring{
+  right: 0;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 15px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+}
+
   </style>
+  <script >
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('bring');
+});
+
+  </script>
 </body>
 </html>

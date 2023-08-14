@@ -3,21 +3,23 @@
   padding: 0;
   /* box-sizing: border-box; */
 }
-body {
-  background-color:whitesmoke;
-}
-html{
 
+body {
+  background-color: whitesmoke;
+  overflow: scroll;
+}
+
+html {
   scroll-behavior: smooth;
 }
+
 .mainNav {
   padding: 10px;
   z-index: 1;
   width: 100%;
   background-color: #ffffff;
-  accent-color: #FF6347;
+  accent-color: #ad4533;
 }
-
 
 .mainNav nav .nav {
   display: flex;
@@ -56,7 +58,7 @@ html{
 }
 
 .mainNav nav .nav .menu ul a li:hover {
-  background-color: #FF6347;
+  background-color: #ff6347;
 }
 
 .mainNav nav .nav .menu ul a li::first-letter {
@@ -80,7 +82,6 @@ html{
 .mainNav nav .nav .services button:hover {
   box-shadow: 2px 2px 5px aqua;
 }
-
 
 .serviceList {
   display: none;
@@ -124,31 +125,39 @@ html{
   justify-content: center;
   align-items: center;
 }
+
+.quickSignUpMain {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 .quickSignUp {
   width: 100%;
   height: 70px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
 }
+
 .quickSignUp nav {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
+
 .quickSignUp nav .signup,
 .login {
   display: flex;
   align-items: center;
   margin: 7px;
 }
+
 .quickSignUp nav form {
   display: flex;
 }
+
 .quickSignUp nav .signup,
 .login p {
   color: #053f71;
@@ -157,21 +166,26 @@ html{
   padding: 5px;
   margin: 5px;
 }
+
 .quickSignUp input {
   padding: 9px 150px;
   border: 2px solid rgb(49, 139, 218);
   outline: none;
   border-radius: 10px;
 }
+
 .quickSignUp input:hover {
   border: 3px solid rgb(23, 104, 175);
 }
+
 .quickSignUp input:focus {
   border: 3px solid rgb(0, 39, 74);
 }
+
 .quickSignUp input:valid {
   border: 3px solid rgb(12, 249, 0);
 }
+
 .quickSignUp button {
   background-color: #0d4a4f;
   border: none;
@@ -183,6 +197,7 @@ html{
   font-family: cursive;
   text-transform: capitalize;
 }
+
 section {
   overflow: hidden;
 }
@@ -192,8 +207,6 @@ section {
   justify-content: center;
   margin: 10px;
   border-radius: 15px;
-  background-color: #F5DEB3 ;
-  accent-color: #FFD700 ;
 }
 
 .firstPageContent .box1 {
@@ -229,7 +242,7 @@ section {
   line-height: normal !important;
   font-size: 15px;
   font-weight: 200;
-  color: #4B0082;
+  color: #4b0082;
 }
 
 .firstPageContent .box1 .box1Content span {
@@ -249,7 +262,7 @@ section {
   border: none;
   outline: none;
   padding: 10px;
-  background-color:  #FFD700;
+  background-color: #ffd700;
   border-radius: 25px;
   cursor: pointer;
   color: aliceblue;
@@ -310,36 +323,36 @@ section {
 }
 
 .caption {
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.363);
-    padding: 1px;
-    margin: 2px;
-    color: white;
-    font-weight: 200;
-    font-family: "PT Sans", sans-serif;
-    text-transform: capitalize;
-    transition: 0.7s cubic-bezier(0.43, 0.18, 0.9, -0.17);
-    opacity: 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.363);
+  padding: 1px;
+  margin: 2px;
+  color: white;
+  font-weight: 200;
+  font-family: "PT Sans", sans-serif;
+  text-transform: capitalize;
+  transition: 0.7s cubic-bezier(0.43, 0.18, 0.9, -0.17);
+  opacity: 0;
 }
+
 .caption:hover {
   opacity: 1;
   cursor: pointer;
 }
 
 .secondSection {
-  
-  color:  #333333 !important;
+  color: #333333 !important;
   margin: 10px 0px;
   padding: 40px;
-  background-color:#FFFAF0  ;
-  accent-color: #FF6F61;
+  background-color: #fffaf0;
+  accent-color: #ff6f61;
 }
 
 .secondSection .secondSectionContent {
@@ -358,18 +371,20 @@ section {
   font-size: 25px;
   text-align: center;
   font-family: "Aref Ruqaa Ink", serif;
-  color: #1e1c1c ;
+  color: #1e1c1c;
 }
 
 .secondSection .secondSectionContent .foodGallery {
   display: flex;
 }
+
 .secondSection .secondSectionContent .foodintro {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   font-size: 20px;
 }
+
 .secondSection .secondSectionContent .foodintro h3 {
   text-transform: capitalize;
   border-bottom: 1.7px solid #000000;
@@ -378,6 +393,7 @@ section {
   color: #000;
   width: 100%;
 }
+
 .foodGallery {
   overflow-x: scroll;
   width: 1350px;
@@ -396,7 +412,7 @@ section {
   align-items: center;
   justify-content: center;
   transition: 0.3s ease-in-out;
-  color:  #333333;
+  color: #333333;
 }
 
 .GalleryImg img {
@@ -443,20 +459,24 @@ section {
   width: 140px;
   font-size: 17px;
 }
+
 .GallerySubmit button:focus {
   cursor: pointer;
   width: 140px;
   font-size: 17px;
 }
+
 .DrinksGallery {
   overflow-x: scroll;
   width: 1350px;
   margin: 5px 0px;
   padding: 10px 0px;
 }
+
 .secondSection .secondSectionContent .DrinksGallery {
   display: flex;
 }
+
 .DrinksMenu h3 {
   text-transform: capitalize;
   border-bottom: 1.7px solid #000000;
@@ -464,11 +484,13 @@ section {
   font-family: cursive;
   color: #000;
 }
+
 .describeOrder h5 {
   text-transform: capitalize;
   font-family: cursive;
   font-size: 20px;
 }
+
 .describeOrder button {
   padding: 7px;
   background-color: #000000;
@@ -478,21 +500,25 @@ section {
   outline: none;
   border-radius: 5px;
 }
+
 .reservationSectionContent {
   color: #fff !important;
   text-transform: capitalize !important;
   font-family: cursive !important;
 }
+
 .reservationSectionContent .h1 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .reservationSectionContent .h1 h1 span::first-letter {
   font-size: 65px;
   color: #000;
   font-family: cursive;
 }
+
 .reservationSectionContent .h1 h1 {
   font-size: 40px;
   border-bottom: 3px solid #00e1ff;
@@ -502,41 +528,50 @@ section {
   text-align: center;
   width: 100%;
 }
+
 .reservationSectionContent1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #F0FFF0 ;
-  accent-color: #FF1493;
+  background-color: #f0fff0;
+  accent-color: #ff1493;
   margin: 40px;
   padding: 10px;
   border-radius: 25px;
 }
+
 .reservationSectionContent1 .box1 {
   width: 838.8px;
   height: 500px;
 }
+
 .reservationSectionContent1 .box1 article p span {
   background-color: #000;
   padding: 5px;
   margin: 0px;
   border-radius: 10px;
 }
+
 .reservationSectionContent1 .box1 h1 {
   font-size: 60px;
-  color: #2E8B57;
+  color: #2e8b57;
 }
+
 .reservationSectionContent1 .box1 h1 img {
   width: 60px;
 }
+
 .reservationSectionContent1 .box1 h3 {
   font-size: 30px;
   color: rgb(255, 234, 0);
 }
-.reservationSectionContent1 .box1 p ,article{
+
+.reservationSectionContent1 .box1 p,
+article {
   font-size: 16px;
-  color: #2E8B57;
+  color: #2e8b57;
 }
+
 .reservationSectionContent1 .box2 form h3 {
   text-transform: capitalize;
   font-size: 20px;
@@ -545,8 +580,9 @@ section {
   border-bottom: 2px solid black;
   width: 100%;
   text-align: center;
-  color: #2E8B57;
+  color: #2e8b57;
 }
+
 .reservationSectionContent1 .box2 form {
   width: 500px;
   height: max-content;
@@ -556,6 +592,7 @@ section {
   color: #29794c !important;
   background-color: #dff0e2;
 }
+
 .reservationSectionContent1 .box2 form label {
   display: block;
   margin: 3px 0px;
@@ -564,6 +601,7 @@ section {
   font-weight: 300;
   font-family: cursive;
 }
+
 .reservationSectionContent1 .box2 form input,
 textarea,
 select {
@@ -573,31 +611,38 @@ select {
   border: 1px solid #08fffb;
   margin: 5px;
 }
+
 .reservationSectionContent1 .box2 form select,
 option {
   z-index: 1;
 }
+
 .reservationSectionContent1 .box2 form input:hover {
   border: 1px solid rgb(11, 164, 225);
 }
+
 .reservationSectionContent1 .box2 form input[type="submit"] {
   background-color: #0df609;
   border: none;
 }
+
 .reservationSectionContent1 .box2 form input[type="submit"]:hover {
   background-color: #88e386;
 }
-.ratingsReviews{
-  background-color: #FFFFE0 ;
+
+.ratingsReviews {
   margin: 10px;
   border-radius: 15px;
   padding: 10px;
-  border-radius: 10px; 
+  border-radius: 10px;
   margin: 17px;
 }
+
 .reviewsFromClients {
   display: flex;
+  border-radius: 10px ;
 }
+
 .ratingsheading h1 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 60px;
@@ -605,26 +650,31 @@ option {
   text-align: center;
   color: #333333;
 }
+
 .ratingsheading h3 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 30px;
   text-transform: capitalize;
 }
+
 .reviewCard .stars img {
   width: 100px;
   margin: 3px;
 }
+
 .reviewCard .ClientImgName .Clientimg img {
   width: 200px;
   height: 130px;
   border-radius: 20px;
 }
+
 .reviewCard .ClientImgName .Clientimg {
   display: flex;
   align-items: center;
   margin: 5px;
   flex-direction: column;
 }
+
 .reviewCard .ClientImgName {
   display: flex;
   flex-direction: column;
@@ -633,13 +683,14 @@ option {
 .reviewCard .review {
   font-family: "REM", sans-serif;
 }
+
 .reviewCard {
   width: 500px;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid rgb(61, 209, 253);
   border-radius: 20px;
   margin: 10px;
   padding: 5px;
@@ -650,11 +701,13 @@ option {
   -webkit-box-shadow: 1px 3px 23px -4px rgba(0, 0, 0, 0.28);
   -moz-box-shadow: 1px 3px 23px -4px rgba(0, 0, 0, 0.28);
 }
+
 .reviewCard .date {
   opacity: 0.7;
   display: flex;
   justify-content: flex-end;
 }
+
 .yourReview h4 {
   font-size: 25px;
   color: #00e1ff;
@@ -663,10 +716,12 @@ option {
   letter-spacing: 2px;
   font-weight: 400;
 }
+
 .yourReview textarea {
   width: 300px;
   color: black;
 }
+
 .yourReview input {
   background-color: rgb(47, 255, 54);
   padding: 15px;
@@ -675,27 +730,33 @@ option {
   outline: none;
   border-radius: 10px;
 }
+
 .yourReview input:hover {
   background-color: green;
   cursor: pointer;
 }
+
 .chooseDiningKings {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
 .chooseDiningKings h1 span {
   color: blue;
 }
+
 .chooseDiningKings h1 {
   font-size: 40px;
   text-transform: capitalize;
   font-family: "Montserrat", sans-serif;
 }
+
 .reasonsDiningKings {
   display: flex;
 }
+
 .reasonsDiningKings .reasons {
   width: 200px;
   height: 100px;
@@ -711,21 +772,25 @@ option {
   margin: 30px;
   border-radius: 10px;
 }
+
 .reasonsDiningKings .reasons span {
   color: blue;
   font-size: 40px;
 }
+
 .reasonsDiningKings .reasons p {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   text-transform: capitalize;
 }
+
 .ourChefsContent h1 {
   text-align: center;
   font-size: 70px;
-  color: blue;
+  color: rgb(16, 144, 154);
   text-transform: capitalize;
 }
+
 .ourChefsContent .chefs {
   display: flex;
   align-items: center;
@@ -735,6 +800,7 @@ option {
   font-size: 20px;
   color: #fff;
 }
+
 .ourChefsContent .chefs .content {
   background-color: #0000008d;
   padding: 5px;
@@ -743,6 +809,7 @@ option {
   align-items: center;
   border-radius: 10px;
 }
+
 .chef1 {
   background: url(img/chefs/chef\ ebuka.jpg);
   width: 200px;
@@ -757,6 +824,7 @@ option {
   margin: 20px;
   box-shadow: 3px 3px 10px 3px #b4cfe9;
 }
+
 .chef2 {
   background: url(img/chefs/chef\ daniel.jpg);
   width: 200px;
@@ -771,6 +839,7 @@ option {
   margin: 20px;
   box-shadow: 3px 3px 10px 3px #b4cfe9;
 }
+
 .chef3 {
   background: url(img/chefs/chef\ lora.jpg);
   width: 200px;
@@ -785,6 +854,7 @@ option {
   margin: 20px;
   box-shadow: 3px 3px 10px 3px #b4cfe9;
 }
+
 .chef4 {
   background: url(img/chefs/chef\ rachel.jpg);
   width: 200px;
@@ -799,158 +869,332 @@ option {
   margin: 20px;
   box-shadow: 3px 3px 10px 3px #b4cfe9;
 }
-.phoneMenu{
+
+.phoneMenu {
   display: none;
 }
 
-.footer{
+.footer {
   padding: 40px 40px;
-  background-color: #084bdbdc;
+  background-color: #06124cdc;
   color: white !important;
   font-family: cursive !important;
   text-transform: capitalize !important;
 }
-.footerSectionContent{
+
+.footerSectionContent {
   display: flex;
   margin: 40px;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
 }
 
-.copyWright span{
+.copyWright span {
   font-size: 40px;
 }
-textarea{
+
+textarea {
   resize: none;
 }
-.footerSectionContent .contentLeft{
+
+.footerSectionContent .contentLeft {
   max-width: 600px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-weight: 200;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.footerSectionContent .media{
+
+.footerSectionContent .media {
   display: flex;
   align-items: center;
   margin: 5px;
 }
 
-.contentMidlle h3{
+.contentMidlle h3 {
   text-transform: capitalize;
   text-align: left;
 }
 
-.contentMidlle .socials{
+.contentMidlle .socials {
   display: flex;
   flex-direction: column;
-
 }
 
-.contentMidlle .socials .media span{
+.contentMidlle .socials .media span {
   margin: 5px;
   font-size: 20px;
 }
 
-.contentMidlle .socials .media p{
+.contentMidlle .socials .media p {
   text-transform: capitalize;
   font-family: cursive;
 }
-.contentRight li{
+
+.contentRight li {
   list-style: none;
 }
-.contentRight li a{
+
+.contentRight li a {
   color: white;
   text-decoration-line: underline;
 }
 
-@media only screen and (max-width:1200px) {
-body{
-  max-width: 100%;
-  overflow: scroll;
-  width: 100vh;
-}
-.mainNav nav .nav .menu ul a li {
-  margin: 0 10px;
-}
-.quickSignUp input {
-  padding: 9px 70px;
-  border: 2px solid rgb(49, 139, 218);
-  outline: none;
-}
-.box2img img {
-  width: 200px;
-  height: 200px;
+a {
+  text-decoration: none;
 }
 
-.firstPageContent .box1 .box1Content{
-  max-width: 500px;
-}
-#firstPage {
-  max-width: 100%;
-  padding: 0px;
-  margin: 0;
+.menutoggle {
+  cursor: pointer;
+  right: 0%;
+  color: black;
+  position: relative;
+  font-size: 30px;
+  position: relative;
+  display: none;
 }
 
+.menu-comeout {
+  position: fixed;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  width: 70%;
+  background-color: #383838;
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  height: 100%;
+  color: white;
+  flex-direction: column;
+  backdrop-filter: blur(5px) brightness(80%);
 }
 
-@media only screen and (max-width:801px){
-  .quickSignUp{
+.menu-comeout ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-comeout ul li {
+  margin: 10%;
+  font-family: serif;
+  font-size: 25px;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+.menu-comeout ul li:hover {
+  background-color: aqua;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    max-width: 100%;
+    overflow: scroll;
+    width: 100vh;
+  }
+
+  .mainNav nav .nav .menu ul a li {
+    margin: 0 10px;
+  }
+
+  .quickSignUp input {
+    padding: 9px 70px;
+    border: 2px solid rgb(49, 139, 218);
+    outline: none;
+  }
+
+  .box2img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .firstPageContent .box1 .box1Content {
+    max-width: 500px;
+  }
+
+  #firstPage {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 801px) {
+  .quickSignUp {
     display: none;
   }
-  .box2img{
-    width: 200px;
+
+  .box2img {
+    width: 20%;
   }
-  .box1Header h2{
+
+  .box1Header h2 {
     font-size: 30px;
   }
-  mainNav nav .nav .menu ul,a,li , .services{
+
+  .mainNav nav .nav .menu .notShowing,
+  .services {
     display: none;
-  
   }
-  .box1Content p{
+
+  .box1Content p {
     font-size: 11px;
   }
-  .set2{
+
+  .set2 {
     display: none;
   }
-  .set1{
+
+  .set1 {
     display: flex;
     flex-direction: column;
   }
-  .reviewsFromClients{
+
+  .Gallery {
+    margin: 3px;
+    background-color: #ffffff;
+    width: 250px;
+    height: 350px;
+  }
+
+  .GalleryImg img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .reviewsFromClients {
     display: flex;
     flex-direction: column;
     background-color: white;
   }
-  .reservationSectionContent1 .box1 h1{
+
+  .reservationSectionContent1 .box1 h1 {
     font-size: 25px;
   }
-  .reservationSectionContent1 .box1 h3{
+
+  .reservationSectionContent1 .box1 h3 {
     font-size: 15px;
   }
+
   .reservationSectionContent1 .box2 form {
     width: 300px;
   }
+
   .reviewCard .ClientImgName .Clientimg img {
     width: 80px;
   }
-  .reviewCard{
-    width: 300px;
+
+  .reviewCard {
+    width: 40%;
   }
-  .part1{
+
+  .part1 {
     display: flex;
   }
-  .footerSectionContent,.contentLeft,.contentMidlle,.spcials{
+
+  .footerSectionContent,
+  .contentLeft,
+  .contentMidlle,
+  .spcials {
     display: flex !important;
     flex-direction: column !important;
   }
+  .menutoggle {
+    display: block;
+  }
 }
 
-@media only screen and (max-width:601px){
-  body{
-    overflow: scroll;
+@media only screen and (max-width: 600px) {
+  .firstPageContent {
+    display: flex;
+    flex-wrap: wrap;
   }
+  .firstPageContent .box1 .box1Header h2 {
+    font-size: 35px;
+  }
+  .firstPageContent .box1 .box1Header h2 ::first-letter {
+    font-size: 40px;
+  }
+  .firstPageContent .box1 .box1Content span {
+    font-size: 22px;
+  }
+  .firstPageContent .box2 .box2Content .caption {
+    display: none;
+  }
+
+  .secondSection .secondSectionContent .h1 h1 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .secondSection .secondSectionContent .h1 p {
+    font-size: 15px;
+  }
+
+  .foodGallery .Gallery .gallery .GalleryImg img {
+    width: 150px;
+    height: 150px;
+  }
+  .GalleryCaption {
+    font-size: 12px;
+  }
+  .foodGallery .Gallery {
+    height: 270px;
+  }
+
+  .DrinksGallery .Gallery .gallery .GalleryImg img {
+    width: 150px;
+    height: 150px;
+  }
+  .GalleryCaption {
+    font-size: 12px;
+  }
+  .DrinksGallery .Gallery {
+    height: 270px;
+  }
+  .reservationSection .reservationSectionContent .reservationSectionContent1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .reservationSection
+    .reservationSectionContent
+    .reservationSectionContent1
+    .box1
+    h1
+    img {
+    display: none;
+  }
+  .ratingsReviews .ratingsheading h1 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .ratingsReviews .ratingsheading h3 {
+    font-size: 20px;
+  }
+
+  .reviewsFromClients .part1 ,.reviewCard{
+    width: 90%;
+  }
+  
+  
+
+  .reviewsFromClients .part1 {
+    flex-direction: column;
+  }
+.chooseDiningKings .whyDiningKings .reasonsDiningKings {
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.chooseDiningKings .whyDiningKings .reasonsDiningKings .reasons{
+  width:90%;
+}
+.ourChefsContent h1{
+  font-size: 50px;
+}
+.ourChefsContent .chefs{
+  flex-wrap: wrap;
+}
 
 }
