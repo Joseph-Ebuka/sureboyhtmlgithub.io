@@ -79,22 +79,26 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <title>restaurant</title>
 </head>
 
 <body>
     <section>
 
-        <div class="mainNav">
+        <div class="mainNav" id="navbar">
             <nav>
-                <div class="nav">
+                <div class="nav" >
                     <div class="logo">
-                        <img src="#" alt="logo">
+                        <h1>
+                            logo
+                        </h1>
+                        
                     </div>
                     <div class="menu">
                         <div class="notAvailable">
@@ -156,7 +160,8 @@
                     </div>
                     <div class="menutoggle">
                         <div class="toggle" onclick="show()">
-                            <i class="fi fi-br-list"></i></div>
+                            <i class="fi fi-br-list"></i>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -218,12 +223,12 @@
                         <div class="box1Content">
                             <p>
                                 Welcome to Dining kings, a culinary haven nestled in the heart of the city. With its
-                                
+
                                 charming ambiance, impeccable service, and a tantalizing menu, this restaurant promises
                                 an
-                                
+
                                 unforgettable dining experience. Whether you're seeking a romantic dinner for two or a
-                                
+
                                 gathering with friends and family, Dinning kings is the perfect destination to indulge
                                 in
                                 exquisite cuisine.
@@ -290,8 +295,8 @@
                                 From delectable appetizers to mouthwatering
                                 mains
                                 and divine desserts, our menu offers a range of culinary delights to suit every palate.
-                            </span> 
-                                
+                            </span>
+
                         </p>
                     </div>
                     <div class="foodintro">
@@ -761,7 +766,7 @@
                                 reservation until it is confirmed by our staff. <br><br><br>
                                 <p>
                                     For any immediate assistance or changes to an existing reservation, please call us
-                                    directly at <span><i class="fi fi-brands-whatsapp"></i> +2349042350500</span>
+                                    directly at <br> <span><i class="fi fi-brands-whatsapp"></i> +2349042350500</span>
                                 </p>
                             </article>
                         </div>
@@ -1055,11 +1060,27 @@
             </div>
         </section>
         <script>
+            let prevScrollPos = window.pageYOffset;
+            const navbar = document.getElementById("navbar");
+
+            window.onscroll = function () {
+                var currentScrollPos = window.pageYOffset;
+
+                // Check if scrolling down
+                if (prevScrollPos > currentScrollPos) {
+                    navbar.style.top = "0";
+                } else {
+                    navbar.style.top = "-60px"; // Adjust this value to the height of your navbar
+                }
+
+                prevScrollPos = currentScrollPos;
+            };
+
             const menu = document.querySelector('.menu-comeout');
             const close = document.querySelector('.mute');
             function show() {
                 menu.style.display = "flex"
-            };  
+            };
 
             function mute() {
                 menu.style.display = "none"

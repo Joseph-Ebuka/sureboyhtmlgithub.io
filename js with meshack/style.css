@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#button{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid;
+    display: flex;
+    gap: 10px;
+    width: 60px;
+}
+
+#content{
+    width: 70%;
+    height: 300px;
+    position: fixed;
+    border: 1px solid black;
+    background-color: #fff;
+    left: -70%;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#content span{
+    width:15px;
+    font-size: 20px;
+    float: right;
+    border: 1px solid;
+    cursor: pointer;
+}

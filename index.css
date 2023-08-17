@@ -24,6 +24,7 @@ html {
   -webkit-box-shadow: 4px 6px 40px -13px rgba(22, 91, 199, 0.81);
   -moz-box-shadow: 4px 6px 40px -13px rgba(22, 91, 199, 0.81);
   margin-bottom: 60px;
+  transition: 0.7s ease-in-out;
 }
 
 .mainNav nav .nav {
@@ -32,12 +33,9 @@ html {
   justify-content: space-evenly;
 }
 
-.mainNav nav .nav .logo img {
-  width: 60px;
-  height: 30px;
-  border: 2px solid rgb(79, 132, 248);
-  padding: 10px;
-  border-radius: 25px;
+.mainNav nav .nav .logo h1 {
+font-size: 25px;
+text-transform: capitalize;
 }
 
 .mainNav nav .nav .menu ul {
@@ -207,6 +205,9 @@ section {
   overflow: hidden;
 }
 
+.firstPage{
+  margin-top: 60px;
+}
 .firstPageContent {
   display: flex;
   justify-content: center;
@@ -247,13 +248,13 @@ section {
   word-spacing: 5px;
   line-height: normal !important;
   font-size: 18px;
-  font-weight: 200;
-  color: #4b0082;
+  font-weight: 400;
+  color: black ;
 }
 
 .firstPageContent .box1 .box1Content span {
   font-size: 40px;
-  color: aqua;
+  color: rgb(10, 153, 163);
   text-transform: capitalize;
   font-family: "Pacifico", cursive;
 }
@@ -490,7 +491,9 @@ section {
   font-family: "Oxygen", sans-serif;
   color: #000;
 }
-
+.describeOrder textarea{
+  width:80%;
+}
 .describeOrder h5 {
   text-transform: capitalize;
   font-family: "Roboto Slab", serif;
@@ -1239,5 +1242,22 @@ a {
   }
   .copyWright span {
     font-size: 12px;
+  }
+  .reviewCard .ClientImgName .Clientimg img{
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 375px){
+  .firstPageContent .box1 .box1Header h2 {
+    font-size: 25px;
+  }
+  .firstPageContent .box1 .box1Content span {
+    font-size: 17px;
+  }
+  .chooseDiningKings h1{
+    font-size: 24px;
+  }
+  .reviewCard .ClientImgName .Clientimg img{
+    width: 150px;
   }
 }
