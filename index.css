@@ -17,7 +17,8 @@ html {
   padding: 10px;
   z-index: 1;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #ffffff71;
+  backdrop-filter: blur(10px);
   accent-color: #ad4533;
   position: fixed;
   box-shadow: 4px 6px 40px -13px rgba(22, 91, 199, 0.81);
@@ -34,8 +35,8 @@ html {
 }
 
 .mainNav nav .nav .logo h1 {
-font-size: 25px;
-text-transform: capitalize;
+  font-size: 25px;
+  text-transform: capitalize;
 }
 
 .mainNav nav .nav .menu ul {
@@ -205,7 +206,7 @@ section {
   overflow: hidden;
 }
 
-.firstPage{
+.firstPage {
   margin-top: 60px;
 }
 .firstPageContent {
@@ -249,7 +250,7 @@ section {
   line-height: normal !important;
   font-size: 18px;
   font-weight: 400;
-  color: black ;
+  color: black;
 }
 
 .firstPageContent .box1 .box1Content span {
@@ -491,8 +492,8 @@ section {
   font-family: "Oxygen", sans-serif;
   color: #000;
 }
-.describeOrder textarea{
-  width:80%;
+.describeOrder textarea {
+  width: 80%;
 }
 .describeOrder h5 {
   text-transform: capitalize;
@@ -571,7 +572,7 @@ section {
 
 .reservationSectionContent1 .box1 h3 {
   font-size: 30px;
-  color: rgb(255, 234, 0);
+  color: rgb(6, 51, 49);
 }
 
 .reservationSectionContent1 .box1 p,
@@ -970,12 +971,12 @@ a {
   right: 0;
   z-index: 1000;
   width: 70%;
-  background-color: #3838388f;
+  background-color: #0000008a;
   transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   height: 100%;
   color: white;
   flex-direction: column;
-  backdrop-filter: blur;
+  backdrop-filter: blur(10px);
 }
 .inside {
   display: flex;
@@ -988,16 +989,23 @@ a {
   list-style: none;
   padding: 0;
 }
-
+.inside a{
+  
+}
 .inside li {
-  margin: 30px;
   font-family: serif;
   font-size: 25px;
   padding: 20px;
   cursor: pointer;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgb(0, 143, 187);
 }
 .menu-li-a {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .menu-comeout ul li:hover {
@@ -1243,21 +1251,21 @@ a {
   .copyWright span {
     font-size: 12px;
   }
-  .reviewCard .ClientImgName .Clientimg img{
+  .reviewCard .ClientImgName .Clientimg img {
     width: 150px;
   }
 }
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 375px) {
   .firstPageContent .box1 .box1Header h2 {
     font-size: 25px;
   }
   .firstPageContent .box1 .box1Content span {
     font-size: 17px;
   }
-  .chooseDiningKings h1{
+  .chooseDiningKings h1 {
     font-size: 24px;
   }
-  .reviewCard .ClientImgName .Clientimg img{
+  .reviewCard .ClientImgName .Clientimg img {
     width: 150px;
   }
 }
